@@ -1,0 +1,49 @@
+:root {
+    --min-lines: 25;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: max-content auto;
+    justify-items: start;
+    grid-gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.rule_editor {
+    display: flex;
+}
+
+textarea {
+    font-family: monospace;
+    min-height: 25lh;
+    background-image: linear-gradient(#F1F1F1 50%, #F9F9F9 50%);
+    background-position-y: 0.15lh;
+    background-size: 100% 2lh;
+    background-attachment: local;
+}
+
+#line_numbers {
+    resize: none;
+    width: 5ch;
+    text-align: right;
+    overflow: hidden;
+    border-right: none;
+}
+
+#rename_map {
+    min-width: 40ch;
+}
+
+#save_msg {
+    color: green;
+}
+
+#error_msg {
+    color: red;
+}

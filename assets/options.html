@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Option</title>
+    <link rel="stylesheet" href="./styles/options.css">
+    <script type="module" src="./scripts/options.js"></script>
+</head>
+<body>
+<div class="settings">
+    <label for="hide_icons">Hide icons</label>
+    <input id="hide_icons" type="checkbox">
+    <label for="rename_map">Mappings</label>
+    <div class="rule_editor">
+        <!--suppress HtmlFormInputWithoutLabel -->
+        <textarea id="line_numbers" rows="25" cols="5" readonly></textarea>
+        <textarea id="rename_map" rows="25" cols="40"></textarea>
+    </div>
+</div>
+<button id="save">Save</button>
+<button id="reset">Reset to default</button>
+<span id="save_msg"></span>
+<div id="error_msg"></div>
+</body>
+</html>

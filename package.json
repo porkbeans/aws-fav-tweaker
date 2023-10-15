@@ -1,0 +1,18 @@
+{
+  "name": "aws-fav-tweaker",
+  "version": "0.1.0",
+  "description": "Tweak favorite bar on AWS console.",
+  "type": "module",
+  "scripts": {
+    "update_gitignore": "gibo dump JetBrains Node >.gitignore"
+  },
+  "author": "me@porkbeans.dev",
+  "private": true,
+  "license": "MIT",
+  "volta": {
+    "node": "18.18.2"
+  },
+  "devDependencies": {
+    "chrome-types": "^0.1.231"
+  }
+}
