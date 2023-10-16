@@ -4,7 +4,8 @@
   "description": "Tweak favorite bar on AWS console.",
   "type": "module",
   "scripts": {
-    "update_gitignore": "gibo dump JetBrains Node >.gitignore"
+    "update_gitignore": "gibo dump JetBrains Node >.gitignore",
+    "build": "zip -r ./aws-fav-tweaker.zip manifest.json assets/ img/ README.md LICENSE"
   },
   "author": "me@porkbeans.dev",
   "private": true,
