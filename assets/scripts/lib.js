@@ -73,13 +73,11 @@ export function validateOptions (options) {
  */
 export async function loadOptions () {
   let options = await chrome.storage.local.get();
+
+  // Load default when storage is empty
   if (!Object.keys(options).length) {
-    const empty_options = {
-      "hide_icons": false,
-      "rename_map": {},
-    };
-    console.log("loaded empty options", empty_options);
-    return empty_options;
+    console.log("loaded default options", default_settings);
+    return default_settings;
   }
 
   console.log("loaded saved options", options);
