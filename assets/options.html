@@ -12,8 +12,12 @@
     <label for="rename_map">Mappings</label>
     <div class="rule_editor">
         <!--suppress HtmlFormInputWithoutLabel -->
-        <textarea id="line_numbers" rows="25" cols="5" readonly></textarea>
-        <textarea id="rename_map" rows="25" cols="40"></textarea>
+        <textarea id="line_numbers" class="code" rows="25" cols="5" readonly></textarea>
+        <textarea id="rename_map" class="code" rows="25" cols="40"></textarea>
+        <div class="sample_section">
+            <label for="sample_value">Sample:</label>
+            <code id="sample_value" class="code"></code>
+        </div>
     </div>
 </div>
 <button id="save">Save</button>

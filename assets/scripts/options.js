@@ -98,6 +98,13 @@ async function main () {
   renameMap.addEventListener("input", updateLineNumbers);
   renameMap.addEventListener("input", waitInputDone(getOptions, 1000));
 
+  // Show sample mappings
+  const sample = document.getElementById("sample_value");
+  sample.innerText = JSON.stringify({
+    "Simple Notification Service": "SNS",
+    "Simple Queue Service": "SQS",
+  }, null, 2);
+
   // Save action
   const save = document.getElementById("save");
   save.addEventListener("click", () => {

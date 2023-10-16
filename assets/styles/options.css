@@ -19,13 +19,19 @@ label {
     display: flex;
 }
 
-textarea {
+.code {
     font-family: monospace;
-    min-height: 25lh;
+    font-size: medium;
+    padding: 2px;
+    border: 1px solid #777777;
     background-image: linear-gradient(#F1F1F1 50%, #F9F9F9 50%);
     background-position-y: 0.15lh;
     background-size: 100% 2lh;
     background-attachment: local;
+}
+
+textarea {
+    min-height: 25lh;
 }
 
 #line_numbers {
@@ -38,6 +44,17 @@ textarea {
 
 #rename_map {
     min-width: 40ch;
+}
+
+.sample_section {
+    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+code#sample_value {
+    white-space: pre;
 }
 
 #save_msg {
